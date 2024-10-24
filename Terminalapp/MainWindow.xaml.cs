@@ -27,6 +27,19 @@ namespace Terminalapp
         }
         private void FrameMain_ContentRendered(object sender, EventArgs e)
         {
+            if (FrameMain.CanGoBack)
+            {
+                btnBack.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                btnBack.Visibility = Visibility.Hidden;
+            }
+        }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            FrameMain.GoBack();
         }
     }
 }
