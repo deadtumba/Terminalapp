@@ -22,6 +22,19 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Frame x:Name="FrameForm" NavigationUIVisibility="Hidden" ContentRendered="FrameForm_ContentRendered"/>
+        <Label Grid.Row="0" Grid.Column="0" Content="Фамилия" HorizontalAlignment="Right" VerticalAlignment="Center"  Height="40"/>
+        <Label Grid.Row="1" Grid.Column="0" Content="Имя" HorizontalAlignment="Right" VerticalAlignment="Center"  Height="40"/>
+        <Label Grid.Row="2" Grid.Column="0" Content="Отчество" HorizontalAlignment="Right" VerticalAlignment="Center" Height="40"/>
+        <Label Grid.Row="3" Grid.Column="0" Content="*Номер автомобиля" HorizontalAlignment="Right" VerticalAlignment="Center" Height="40"/>
+        <Label Grid.Row="4" Grid.Column="0" Content="*Организация" HorizontalAlignment="Right" VerticalAlignment="Center" Height="40"/>
+        <Label Grid.Row="5" Grid.Column="0" Content="*Номер телефона(+79991234567)" HorizontalAlignment="Right" VerticalAlignment="Center" Height="40"/>
+        <TextBox  Grid.Row="0" Grid.Column="1" x:Name="txbFamiliya" HorizontalAlignment="Center" VerticalAlignment="Center" Width="170" Height="25"/>
+        <TextBox  Grid.Row="1" Grid.Column="1" x:Name="txbImya" HorizontalAlignment="Center" VerticalAlignment="Center" Width="170" Height="25"/>
+        <TextBox  Grid.Row="2" Grid.Column="1" x:Name="txbOtchestvo" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="170" Height="25"/>
+        <TextBox  Grid.Row="3" Grid.Column="1" x:Name="txbNomeravto" HorizontalAlignment="Center" VerticalAlignment="Center" Width="170" Height="25"/>
+        <TextBox  Grid.Row="4" Grid.Column="1" x:Name="txbOrganizaciya" HorizontalAlignment="Center" VerticalAlignment="Center" Width="170" Height="25"/>
+        <TextBox  Grid.Row="5" Grid.Column="1" x:Name="txbNomerTelefona" HorizontalAlignment="Center" VerticalAlignment="Center" Width="170" Height="25"/>
+        <Button x:Name="btnClear"  Grid.Row="6" Grid.Column="0" Content="Очистить" HorizontalAlignment="Center" Background="#FFD2C0B1" Width="160" Click="btnClear_Click"/>
+        <Button x:Name="btnSend"  Grid.Row="6" Grid.Column="1" Content="Отправить" HorizontalAlignment="Center" Background="#FFD2C0B1" Width="160" Click="btnSend_Click"/>
     </Grid>
 </Page>

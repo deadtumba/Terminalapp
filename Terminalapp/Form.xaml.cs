@@ -20,11 +20,27 @@ namespace Terminalapp
     /// </summary>
     public partial class Form : Page
     {
-        public Form(bool vibor)
+        public Form(bool vibrn)
         {
             InitializeComponent();
         }
         private void FrameForm_ContentRendered(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnClear_Click(object sender, RoutedEventArgs e)
+        {
+            txbFamiliya.Text = "";
+            txbImya.Text = "";
+            txbOtchestvo.Text = "";
+            txbNomeravto.Text = "";
+            txbOrganizaciya.Text = "";
+            txbNomerTelefona.Text = "";
+       
+        }
+
+        private void btnSend_Click(object sender, RoutedEventArgs e)
         {
 
         }
